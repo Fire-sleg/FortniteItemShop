@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "lHnVv9sWwT9x8FS0ymw3JiL5ybodKu/TYwqM3OXxFSmJikx4SHE2UXbCMOrx4O154owRzhj7YvjIukyDS6g6ig==",
+  "success": true,
+  "projectFilePath": "D:\\WebAPI\\FortniteShopItems\\FortniteShopItemsAPI\\FortniteShopItemsAPI\\FortniteShopItemsAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fires\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "C:\\Users\\fires\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\fires\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\fires\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\fires\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\fires\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\fires\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
