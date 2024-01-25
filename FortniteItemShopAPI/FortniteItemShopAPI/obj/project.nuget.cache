@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lHnVv9sWwT9x8FS0ymw3JiL5ybodKu/TYwqM3OXxFSmJikx4SHE2UXbCMOrx4O154owRzhj7YvjIukyDS6g6ig==",
+  "dgSpecHash": "whM9fbY0xuYm/GTdgmhNw69sU/ol9V2Rza3oTJ6BQt3MNw+5acA/dWS6lXjgeUawFbRvEIZdMwYwgbV6ESTeBA==",
   "success": true,
-  "projectFilePath": "D:\\WebAPI\\FortniteShopItems\\FortniteShopItemsAPI\\FortniteShopItemsAPI\\FortniteShopItemsAPI.csproj",
+  "projectFilePath": "D:\\WebAPI\\FortniteItemShop\\FortniteItemShopAPI\\FortniteItemShopAPI\\FortniteItemShopAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fires\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\fires\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

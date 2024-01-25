@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace FortniteShopItemsAPI.Controllers
+namespace FortniteItemShopAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

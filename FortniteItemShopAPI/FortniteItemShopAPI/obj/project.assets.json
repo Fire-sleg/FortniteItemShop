@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WebAPI\\FortniteShopItems\\FortniteShopItemsAPI\\FortniteShopItemsAPI\\FortniteShopItemsAPI.csproj",
-      "projectName": "FortniteShopItemsAPI",
-      "projectPath": "D:\\WebAPI\\FortniteShopItems\\FortniteShopItemsAPI\\FortniteShopItemsAPI\\FortniteShopItemsAPI.csproj",
+      "projectUniqueName": "D:\\WebAPI\\FortniteItemShop\\FortniteItemShopAPI\\FortniteItemShopAPI\\FortniteItemShopAPI.csproj",
+      "projectName": "FortniteItemShopAPI",
+      "projectPath": "D:\\WebAPI\\FortniteItemShop\\FortniteItemShopAPI\\FortniteItemShopAPI\\FortniteItemShopAPI.csproj",
       "packagesPath": "C:\\Users\\fires\\.nuget\\packages\\",
-      "outputPath": "D:\\WebAPI\\FortniteShopItems\\FortniteShopItemsAPI\\FortniteShopItemsAPI\\obj\\",
+      "outputPath": "D:\\WebAPI\\FortniteItemShop\\FortniteItemShopAPI\\FortniteItemShopAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\fires\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",

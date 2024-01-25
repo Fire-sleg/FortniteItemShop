@@ -1,4 +1,4 @@
-namespace FortniteShopItemsAPI
+namespace FortniteItemShopAPI
 {
     public class WeatherForecast
     {
