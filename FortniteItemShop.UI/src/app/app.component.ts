@@ -1,4 +1,4 @@
-import { FortniteItemShop } from './models/FortniteItemShop';
+import { FortniteApiResponse } from './models/FortniteItemShop';
 import { FortniteItemShopService } from './services/fortnite-item-shop.service';
 import { Component } from '@angular/core';
 
@@ -15,9 +15,9 @@ export class AppComponent {
   ngOnInit(): void {
     this.fortniteItemShopService
       .getFortniteItems()
-      .subscribe(
-        (result: FortniteItemShop) =>
-          (this.title = result.status as any as string)
-      );
+      .subscribe((result: FortniteApiResponse) => {
+        this.title = result.status as any as string;
+        console.log(result);
+      });
   }
 }
