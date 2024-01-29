@@ -1,0 +1,43 @@
+/*.bundle-img {
+    width: 20%;
+}*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.entry {
+  display: flex;
+  margin: 2em;
+  padding: 2em;
+  justify-content: space-between;
+  /*flex-wrap: wrap;*/
+}
+
+.entry > * {
+  padding: 2em;
+}
+
+.bundle {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.item {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+main {
+  padding: 2em;
+}
+
+.img-container {
+  background-color: #333333;
+}

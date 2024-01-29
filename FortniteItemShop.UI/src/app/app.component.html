@@ -1,1 +1,105 @@
-<router-outlet></router-outlet> {{ title }}
+<router-outlet></router-outlet>
+
+<h1>Fornite Shop</h1>
+<h2>Featured Items</h2>
+<main>
+  <div class="entries" *ngFor="let bundle of bundles">
+    <h2>{{ bundle.bundle?.name }}</h2>
+    <div class="entry">
+      <div class="bundle">
+        <div class="img-container">
+          <img
+            class="bundle-img"
+            src="{{ bundle.bundle?.image }}"
+            alt="Bundle Image"
+          />
+        </div>
+        <p>Regular Price: {{ bundle.regularPrice }}</p>
+        <p>Final Price: {{ bundle.finalPrice }}</p>
+      </div>
+      <div class="item" *ngFor="let item of getBundleItems(bundle)">
+        <div class="img-container">
+          <img
+            [src]="getFirstItemImageSrc(item)"
+            style="background-size: cover"
+          />
+        </div>
+
+        <p>Item name - {{ item.items?.[0]?.name }}</p>
+        <p>Regular Price: {{ item.regularPrice }}</p>
+        <p>Final Price: {{ item.finalPrice }}</p>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- [ngStyle]="{
+              'background-image':
+                'url(' + (getFirstItemImageUrl(item) || '') + ')'
+            }" -->
+<!-- @foreach(var bundle in Bundles)
+        {
+            <h2>@bundle.Bundle?.Name</h2>
+            <div class="entry">
+                <div class="bundle">
+                    <div class="img-container">
+                        <img class="bundle-img"  src="@bundle.Bundle.Image" alt="Bundle Image" />
+                    </div>
+                        <p>Regular Price: @bundle.RegularPrice</p>
+                        <p>Final Price: @bundle.FinalPrice</p>
+                    </div>
+                    @* style="background-size: cover; background-image: url(@(bundle.Items.FirstOrDefault().Series?.Image))" src="@(bundle.Items.FirstOrDefault().Images?.Featured ?? bundle.Items.FirstOrDefault().Images?.Icon)" *@
+                    @foreach (var item in Model.Featured.Entries.Where(e => e.SectionId == bundle.SectionId && e.Bundle == null))
+                    {
+                        <div class="item">
+                            <div class="img-container">
+                                <img style="background-size: cover; background-image: url(@(item.Items.FirstOrDefault().Series?.Image))" src="@(item.Items.FirstOrDefault().Images?.Featured ?? item.Items.FirstOrDefault().Images?.Icon)" />
+                            </div>
+                            <p>Item name - @item.Items.FirstOrDefault().Name</p>
+                            <p>Regular Price: @item.RegularPrice</p>
+                            <p>Final Price: @item.FinalPrice</p>
+                        </div>
+
+                    }
+                </div>
+            } -->
+<!-- @*
+            Model.Featured.Entries.Where(item1 => !Bundles.Any(item2 => EqualityComparer<TKey>.Default.Equals(item1 => item2.SelectionId, item2 => item2.SelectionId))).ToList()
+            *@
+            <div class="entry">
+                @foreach (var entry in Model.Featured.Entries.Where(item1 => !Bundles.Any(item2 => item2.SectionId == item1.SectionId)).ToList())
+                {
+                    @foreach (var item in entry.Items.Where(r => r.Type.Value != "backpack"))
+                    {
+                        <div class="item">
+
+                            <div class="img-container">
+                                <img style="background-size: cover; background-image: url(@(item.Series?.Image) )" src="@(item.Images?.Featured ?? item.Images?.Icon)" />
+                            </div>
+                            <p>Item name - @item.Name</p>
+                            <p>Regular Price: @entry.RegularPrice</p>
+                            <p>Final Price: @entry.FinalPrice</p>
+                        </div>
+                    }
+                }
+            </div>
+
+            @if (Model.Daily != null)
+            {
+                <div class="entry">
+                    @foreach (var entry in Model.Daily.Entries)
+                    {
+                        @foreach (var item in entry.Items.Where(r => r.Type.Value != "backpack"))
+                        {
+                            <div class="item">
+
+                                <div class="img-container">
+                                    <img style="background-size: cover; background-image: url(@(item.Series?.Image) )" src="@(item.Images?.Featured ?? item.Images?.Icon)" />
+                                </div>
+                                <p>Item name - @item.Name</p>
+                                <p>Regular Price: @entry.RegularPrice</p>
+                                <p>Final Price: @entry.FinalPrice</p>
+                            </div>
+                        }
+                    }
+                </div>
+            } -->
