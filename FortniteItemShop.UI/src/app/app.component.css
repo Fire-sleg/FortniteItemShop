@@ -6,6 +6,15 @@ img {
   height: auto;
 }
 
+.entries {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sameEntries {
+  flex-wrap: nowrap;
+}
+
 .entry {
   display: flex;
   margin: 2em;
@@ -16,6 +25,11 @@ img {
 
 .entry > * {
   padding: 2em;
+}
+
+#sameEntry {
+  margin: 0;
+  padding: 0;
 }
 
 .bundle {

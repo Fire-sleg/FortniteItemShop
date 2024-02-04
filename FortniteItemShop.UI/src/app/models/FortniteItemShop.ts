@@ -21,6 +21,7 @@ export class FortniteShopEntry {
   public banner?: FortniteShopBanner;
   public items?: FortniteShopItem[];
   public sectionId?: string;
+  public offerId?: string;
 }
 
 export class FortniteShopBundle {
@@ -35,6 +36,11 @@ export class FortniteShopItem {
   public series?: Series;
   public rarity?: Rarity;
   public type?: ItemType;
+  public set?: ItemSet;
+}
+
+export class ItemSet {
+  public value?: string;
 }
 
 export class Image {
