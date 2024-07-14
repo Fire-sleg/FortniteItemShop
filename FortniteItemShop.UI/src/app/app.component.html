@@ -55,19 +55,21 @@
     </div>
   </div>
   <h1>Same Items</h1>
-  <div
-    class="entries"
-    id="sameEntries"
-    *ngFor="let sameEntries of uniqueEntries"
-  >
-    <div class="entry" id="sameEntry" *ngFor="let entry of sameEntries">
-      <div class="item" *ngFor="let item of getItemsFromEntry(entry)">
-        <div class="img-container">
-          <img style="background-size: cover" [src]="getItemImageSrc(item)" />
+  <div class="sameItems">
+    <div
+      class="entries"
+      id="sameEntries"
+      *ngFor="let sameEntries of uniqueEntries"
+    >
+      <div class="entry" id="sameEntry" *ngFor="let entry of sameEntries">
+        <div class="item" *ngFor="let item of getItemsFromEntry(entry)">
+          <div class="img-container">
+            <img style="background-size: cover" [src]="getItemImageSrc(item)" />
+          </div>
+          <p>Item name - {{ item.name }}</p>
+          <p>Regular Price: {{ entry.regularPrice }}</p>
+          <p>Final Price: {{ entry.finalPrice }}</p>
         </div>
-        <p>Item name - {{ item.name }}</p>
-        <p>Regular Price: {{ entry.regularPrice }}</p>
-        <p>Final Price: {{ entry.finalPrice }}</p>
       </div>
     </div>
   </div>

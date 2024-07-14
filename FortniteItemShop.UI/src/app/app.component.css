@@ -6,6 +6,11 @@ img {
   height: auto;
 }
 
+.sameItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .entries {
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +18,7 @@ img {
 
 #sameEntries {
   flex-wrap: nowrap;
+  border: 2px solid #ff0000;
 }
 
 .entry {
